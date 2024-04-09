@@ -114,6 +114,8 @@ function buttonUse(id) {
         break;
 
       case "delete":
+        if (typeof calc !== 'string') calc = calc.toString();
+        if (typeof expression !== 'string') expression = expression.toString();
         if (calc == "" || expression == "") return; // if calc is empty or expression is empty, do nothing.
         if (expression == "Error") return; // if expression is "Error", do nothing.
         calc = calc.substring(0, calc.length - 1);
