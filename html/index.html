@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Simple HTML Web Calculator</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <script src="../js/script.js"></script>
+
+    <div class="calculatorBody">
+
+      <input type="text" id="resultbox" disabled>
+
+      <!--Row 1-->
+      <input type="button" value="C" id="clear" class="row1" onclick="buttonUse('clear')">
+      <input type="button" value="Delete" id="delete" class="row1" onclick="buttonUse('delete')">
+      <input type="button" value="&divide;" id="division" class="row1" onclick="buttonUse('division')">
+      <input type="button" value="&times;" id="multiply" class="row1" onclick="buttonUse('multiply')">
+
+      <!--Row 2-->
+      <input type="button" value="7" id="seven" class="row2" onclick="buttonUse('seven')">
+      <input type="button" value="8" id="eight" class="row2" onclick="buttonUse('eight')">
+      <input type="button" value="9" id="nine" class="row2" onclick="buttonUse('nine')">
+      <input type="button" value="&minus;" id="subtract" class="row2" onclick="buttonUse('subtract')">
+
+      <!--Row 3-->
+      <input type="button" value="4" id="four" class="row3" onclick="buttonUse('four')">
+      <input type="button" value="5" id="five" class="row3" onclick="buttonUse('five')">
+      <input type="button" value="6" id="six" class="row3" onclick="buttonUse('six')">
+      <input type="button" value="&plus;" id="addition" class="row3" onclick="buttonUse('addition')">
+
+      <!--Row 4-->
+      <input type="button" value="1" id="one" class="row4" onclick="buttonUse('one')">
+      <input type="button" value="2" id="two" class="row4" onclick="buttonUse('two')">
+      <input type="button" value="3" id="three" class="row4"onclick="buttonUse('three')">
+
+      <!--Seperate Classes-->
+      <input type="button" value="&equals;" id="equals" class="equalsTo" onclick="buttonUse('equals')">
+      <input type="button" value="0" id="0" class="zero" onclick="buttonUse('zero')">
+      <input type="button" value="." id="dot" class="dot" onclick="buttonUse('dot')">
+
+    </div>
+</body>
+</html>
